@@ -1,47 +1,29 @@
-/**
- * Sends a GET request for the workspace id of the company
- *
+#getCompanyId(LOCAL_COMPANY_WORKSPACE)
+ Sends a GET request for the workspace id of the company
  * @param COMPANY_WORKSPACE {String} - The name of the company as its stored in Asana
  * @return workspace_id {Integer}
- **/
- 
-function getCompanyId(LOCAL_COMPANY_WORKSPACE)
 
+#getEmployeeJSON()
+Gets the json object containing all of the employees for the company
+ * @param COMPANY_WORKSPACE_ID {Integer}
+ * @return employees {JSON}
 
-/**
- * Gets the json object containing all of the employees for the company
- *
- * return employees {JSON}
- **/
- 
-function getEmployeeJSON(COMPANY_WORKSPACE_ID)
+#makeEmployeeList()
+Creates an object that holds all of the employees, using the JSON data.
+Just to make getting ids based on names easier.
+ * @param COMPANY_EMPLOYEES_JSON {JSON}
+ * @return COMPANY_EMPLOYEES_LIST {Array} - List of employee objects
 
-/**
- * Creates an object that holds all of the employees, using the JSON data.
- * Just to make getting ids based on names easier.
- *
- * return COMPANY_EMPLOYEES_LIST {Array} - List of employee objects
- **/
- 
-function makeEmployeeList(COMPANY_EMPLOYEES_JSON)
+#populateEmployeeCheckBoxes
+Uses the employee list to populate an input field
+* @param COMPANY_EMPLOYEES_LIST {Array}
 
-/**
- * Uses the employee list to populate an input field
- **/
- 
-function populateEmployeeCheckBoxes(COMPANY_EMPLOYEES_LIST)
-
-/**
- * Gets all of the employees checked for the assignment
- *
+#getAssignees
+Gets all of the employees checked for the assignment
  * @return employees {Array} - List of employee id numbers
- **/
- 
-function getAssignees()
 
-/**
- * Assigns the task using all of the form values 
- *
+#assignTask
+Assigns the task using all of the form values 
  * @param assignee_name {String}
  * @param assignee_id {Integer}
  * @param assignee_email {String}
@@ -50,7 +32,4 @@ function getAssignees()
  * @param task_notes {String [opt='']}
  * @param due_date {String [opt=null]}
  * @param COMPANY_WORKSPACE_ID {Integer}
- **/
- 
-function assignTask(assignee_name, assignee_id, assignee_email,status, task_name, task_notes, due_date, COMPANY_WORKSPACE_ID)
 
