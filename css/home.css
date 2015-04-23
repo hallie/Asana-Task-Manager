@@ -1,0 +1,58 @@
+html, body {
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#employee-head {
+	position: absolute;
+	top: 0;
+	left: 5%;
+}
+#employee-names {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+
+#assignment-head {
+	position: absolute;
+	top: 0;
+	left: 40%;
+}
+
+#assignment {
+	position: absolute;
+	top: 10%;
+	left: 40%;
+	height: 30%;
+	width: 40%;
+}
+
+#assignment-name {
+	padding: 10px;
+	position: absolute;
+	height: 15%;
+	width: 100%;
+}
+
+#assignment-notes {
+	resize: none;
+	padding: 10px;
+	top: 50%;
+	height: 40%;
+	width: 100%;
+}
+
+#due {
+	position: absolute;
+	top: 33%;
+	left: 40%;
+}
+
+#submit {
+	position: absolute;
+	top: 60%;
+	left: 70%;
+}
