@@ -1,14 +1,14 @@
-#getCompanyId(LOCAL_COMPANY_WORKSPACE)
+#getCompanyId
  Sends a GET request for the workspace id of the company
- * @param COMPANY_WORKSPACE {String} - The name of the company as its stored in Asana
+ * @param LOCAL_COMPANY_WORKSPACE {String} - The name of the company as its stored in Asana
  * @return workspace_id {Integer}
 
-#getEmployeeJSON()
+#getEmployeeJSON
 Gets the json object containing all of the employees for the company
  * @param COMPANY_WORKSPACE_ID {Integer}
  * @return employees {JSON}
 
-#makeEmployeeList()
+#makeEmployeeList
 Creates an object that holds all of the employees, using the JSON data.
 Just to make getting ids based on names easier.
  * @param COMPANY_EMPLOYEES_JSON {JSON}
