@@ -4,6 +4,7 @@
  * @param COMPANY_WORKSPACE {String} - The name of the company as its stored in Asana
  * @return workspace_id {Integer}
  **/
+ 
 function getCompanyId(LOCAL_COMPANY_WORKSPACE)
 
 
@@ -12,6 +13,7 @@ function getCompanyId(LOCAL_COMPANY_WORKSPACE)
  *
  * return employees {JSON}
  **/
+ 
 function getEmployeeJSON(COMPANY_WORKSPACE_ID)
 
 /**
@@ -20,11 +22,13 @@ function getEmployeeJSON(COMPANY_WORKSPACE_ID)
  *
  * return COMPANY_EMPLOYEES_LIST {Array} - List of employee objects
  **/
+ 
 function makeEmployeeList(COMPANY_EMPLOYEES_JSON)
 
 /**
  * Uses the employee list to populate an input field
  **/
+ 
 function populateEmployeeCheckBoxes(COMPANY_EMPLOYEES_LIST)
 
 /**
@@ -32,6 +36,7 @@ function populateEmployeeCheckBoxes(COMPANY_EMPLOYEES_LIST)
  *
  * @return employees {Array} - List of employee id numbers
  **/
+ 
 function getAssignees()
 
 /**
@@ -46,5 +51,6 @@ function getAssignees()
  * @param due_date {String [opt=null]}
  * @param COMPANY_WORKSPACE_ID {Integer}
  **/
+ 
 function assignTask(assignee_name, assignee_id, assignee_email,status, task_name, task_notes, due_date, COMPANY_WORKSPACE_ID)
 
